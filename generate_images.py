@@ -136,11 +136,12 @@ def load_Gs(url):
         _G, _D, Gs = pickle.load(f)
     return Gs
 
+
 def main():
 
     args = parse_args()
     if args is None:
-      exit()
+        exit()
 
     # save path for generated images
     save_path = 'generate_images'
